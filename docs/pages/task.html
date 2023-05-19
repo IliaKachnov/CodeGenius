@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/task-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/icon.png" type="image/png">
+  <script src="../scripts/task.js" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/@datavis-tech/codemirror-6-prerelease@5.0.0/codemirror.next/legacy-modes/style/codemirror.css">
+  <script src="https://unpkg.com/@datavis-tech/codemirror-6-prerelease@5.0.0/dist/codemirror.js"></script>
+  <title>Task</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header navbar" id="navbar">
+      <div class="header__container">
+        <a href="../index.html" class="header__logo" id="logo">CodeGenius</a>
+        <nav class="header__menu menu">
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="../index.html" class="menu__link">Catalogue</a>
+              </li>
+              <li class="menu__item">
+                <a href="../pages/myCourses.html" class="menu__link">My Courses</a>
+              </li>
+              <li class="menu__item">
+                <a href="../pages/profile.html" class="menu__link">Profile</a>
+              </li>
+            </ul>
+          </div>
+          <button class="menu__icon icon-menu" type="button">
+            <span class="icon-menu__line"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <div class="loading show-loader">
+      Loading....
+      <div class="loader"></div>
+    </div>
+
+
+    <main>
+      <section class="code__container">
+        <div class="description__container">
+          <h3 class="question">Write a program to reverse a string in JavaScript</h3>
+          <p class="question__text">The task is to write a JavaScript program that inverts a string. For example, if the string "Hello" is given, the program should return the string "olleH"...</p>
+          <p class="question__text">The string reversal algorithm can be implemented as follows:</p>
+          <ul class="question__list">
+            <li class="question__item">Create a function that takes an input string as an argument.</li>
+            <li class="question__item" >Initialise the variable reversedString (or any other variable name) that will store the reversed string. Set the value of this variable as an empty string.</li>
+            <li class="question__item" >Using a loop, iterate through the original string in reverse order, starting with the last character.</li>
+            <li class="question__item" >At each iteration, add the current character to the beginning of the reversedString.</li>
+            <li class="question__item" >When the loop ends, reversedString will contain the reversed string.</li>
+            <li class="question__item" >Return reversedString from the function.</li>
+          </ul>
+        </div>
+
+        <div class="task__container">
+          <div id=editor></div>        
+           <div class="button__container">
+            <button class="button__check">Check</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__item">
+          <h3 class="footer__title">CodeGenius</h3>
+          <span>© 2020-2023</span>
+        </div>
+        <div class="footer__products">
+          <ul class="products__list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html">Catalogue</a></li>
+            <li><a href="../pages/myCourses.html">My Courses</a></li>
+            <li><a href="#">Sign In</a></li>
+            <li><a href="../pages/profile.html">Profile</a></li>
+          </ul>
+        </div>
+      </div>
+  </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.5.3/ace.js"></script>
+</body>
+</html>

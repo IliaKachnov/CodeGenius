@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1 1 auto;
+}
+
+
+[class*="__container"]{
+  max-width: 40.1875rem;
+  margin: 0 auto;
+  padding-left: .9375rem;
+  padding-right: .9375rem;
+}

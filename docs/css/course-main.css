@@ -1,0 +1,136 @@
+main {
+  margin-top:70px;
+}
+.course__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.buttons {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.wrapper-inner {
+  margin-top: 20px;
+  border: 1px solid rgb(236, 231, 231);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.course__lecture {
+  margin-top: 10px;
+  margin-left: 55px;
+  font-size: 20px;
+}
+
+.course__button {
+  width: 110px;
+  padding: 10px 15px;
+  margin: 15px 0px 15px 30px;
+  margin-left: 10px;
+  color: white;
+  background-color: #54ad54;
+  border-radius: 5px;
+  transition: all .2s ease;
+}
+.course__button:hover {
+  background-color: #357035;
+}
+.course__button:active {
+  transform: scale(.95);
+}
+.progress-bar {
+  margin-left: 20px;
+  width: 93%;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress-bar::-webkit-meter-bar {
+  background-color: #ccc;
+}
+
+.progress-bar::-webkit-meter-optimum-value {
+  background-color: green; 
+}
+
+.progress-bar::-moz-meter-bar {
+  background-color: #ccc; 
+}
+
+.progress-bar::-moz-meter-optimum {
+  background-color: green; 
+}
+.course__progress {
+  display: flex;
+  flex-direction: column;
+}
+.progress-percent {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+} 
+
+
+.course {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.course__container {
+  padding: 25px;
+  border: 1px solid rgb(236, 231, 231);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px; 
+}
+.course__img {
+  width: 140px;
+  height: 130px;
+  object-fit: cover;
+}
+.course__title {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 25px;
+}
+.course__about {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px; 
+  height: 100%;
+}
+.ol {
+  padding: 20px;
+}
+.ol__li {
+  margin-top: 10px;
+  list-style-type: decimal;
+  font-weight: 500;
+}
+.ul__li {
+  margin-top: 10px;
+  list-style-type: disc;
+  margin-left: 10px;
+  font-weight: 400;
+}
+.course__about-block {
+  border: 1px solid rgb(236, 231, 231);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+.course__lecture {
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  .course__container {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto;
+  }
+}
+

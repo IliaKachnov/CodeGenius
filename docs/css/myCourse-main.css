@@ -1,0 +1,133 @@
+main {
+  margin-top:70px;
+}
+.search__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding-top: 40px;
+  padding-left: 0px;
+  gap: 5px;
+}
+.search {
+  padding: 12px 0px;
+  background-color: white;
+  border: 1px solid rgb(238, 234, 234);
+  color: black;
+  border-radius: 15px;
+  outline: none;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  width: 75%;
+}
+.search__title {
+  font-size: 40px;
+  margin-left: 0.9375rem;
+}
+.games__items {
+  margin-top: 40px;
+  margin-bottom: 105px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 550px));
+  grid-auto-rows: 17rem;
+  grid-gap: 1.5rem;
+  color: black;
+  justify-content: center;
+}
+.games__items .course__item {
+  border: #e9ecec 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.games__container {
+  border: #e9ecec 1px solid;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.game__title {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.games__section {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.game__price {
+  margin-top: 15px;
+  padding: 0 10px;
+  font-weight: 200;
+}
+.game__img {
+  height: 150px;
+  width: 120px;
+  border-radius: 20px;
+  padding: 15px;
+  object-fit: cover;
+}
+.course__item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.course__title {
+  display: flex;
+}
+.search__title {
+  font-size: 2.275rem;
+}
+.test.hide {
+  display: none;
+}
+.course__button {
+  padding: 10px 15px;
+  margin: 25px 0px 25px 40px;
+  margin-left: 10px;
+  color: white;
+  background-color: #54ad54;
+  border-radius: 5px;
+  transition: all .2s ease;
+}
+.course__button:hover {
+  background-color: #357035;
+}
+.course__button:active {
+  transform: scale(.95);
+}
+.progress-bar {
+  margin-left: 20px;
+  width: 93%;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress-bar::-webkit-meter-bar {
+  background-color: #ccc;
+}
+
+.progress-bar::-webkit-meter-optimum-value {
+  background-color: green; 
+}
+
+.progress-bar::-moz-meter-bar {
+  background-color: #ccc; 
+}
+
+.progress-bar::-moz-meter-optimum {
+  background-color: green; 
+}
+
+.progress-percent {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+} 
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+

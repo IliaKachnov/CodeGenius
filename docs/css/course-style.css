@@ -1,0 +1,10 @@
+/* RESET */
+@import url('reset.css');
+/* HEADER */
+@import url('header.css');
+/* MAIN */
+@import url('course-main.css');
+/* FOOTER */
+@import url('footer.css');
+/* COMMON */
+@import url('course-common.css');

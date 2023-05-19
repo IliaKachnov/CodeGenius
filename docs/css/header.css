@@ -1,0 +1,147 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background: black;
+  transition: background-color 0.3s ease;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.375rem;
+  z-index: 2;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .9375rem;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  min-height: 4.375rem;
+  background-color: black;
+}
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+  position: relative;
+  z-index: 5;
+  padding: 10px 15px;
+}
+.menu__body {
+  position: relative;
+  z-index: 5;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.875rem;
+  row-gap: 5px;
+  flex-wrap: wrap;
+}
+.menu__link {
+  cursor: pointer;
+  color: white;
+  font-size: 1.125rem;
+  transition: all .1s ease;
+  padding: 5px ;
+  opacity: 1;
+  border-bottom: 1px solid white;
+}
+.menu__link:hover {
+  opacity: .7;
+}
+
+.icon__menu {
+  display: none;
+}
+
+
+
+
+@media (max-width: 1110px) {
+  .menu__body {
+    position: fixed;
+    width: 100%;
+    height: 45%;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ;
+    background-color: black;
+    padding: 6.25rem .9375rem 1.25rem .9375rem;
+    overflow: auto;
+    z-index: 1;
+  }
+
+  .menu-open .menu__body {
+    left: 0;
+  }
+  .menu__list {
+    flex-direction: column;
+    gap: 2.1875rem;
+  }
+  .menu__link {
+    font-size: 1.875rem;
+    border: none;
+  }
+  .icon-menu {
+    display: block;
+    position: relative;
+    z-index: 5;
+    width: 1.875rem;
+    height: 1.125rem;
+  }
+  .icon-menu__line,
+  .icon-menu::before,
+  .icon-menu::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 0.125rem;
+    width: 100%;
+    left: 0;
+    transition: all .3s ease;
+  }
+  .icon-menu::before {
+    top: 0;
+  }
+  .icon-menu::after {
+    bottom: 0;
+  }
+  .icon-menu__line {
+    top: calc(50% - 0.0625rem);
+  }
+  .menu-open .icon-menu::before  {
+    top: calc(50% - 0.0625rem);
+    transform: rotate(-45deg);
+  }
+  .menu-open .icon-menu::after  {
+    bottom: calc(50% - 0.0625rem);
+    transform: rotate(45deg);
+  }
+  .menu-open .icon-menu__line {
+    left: 50%;
+    width: 0;
+  }
+}
+@media (max-width: 400px) {
+  .header__logo {
+    font-size: 1.25rem;
+  }
+ 
+}
